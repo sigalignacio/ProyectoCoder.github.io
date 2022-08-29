@@ -1,0 +1,60 @@
+.box-transition {
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    padding: 20px;
+    /* el cambio que puse en hover, con width 1s va a tardar 1 segundo en agrandarse, esta etiqueta va en la clase madre, no en la hover.
+    se puede usar s que son segundos y ms milisegundos*/
+    /* tambien se puede poner transition:all 1s; y hace que todas las propiedades que cambien de valor lo hagan con transition */
+    transition: all 1s; 
+}
+
+.box-transition:hover {
+    width: 400px;
+    height: 200px;
+    background-color: tomato;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+
+}
+
+input:focus {
+    background-color: greenyellow;
+    /* la pseudoclase focus hace que cuando clickee en el input para escribir,
+    cambie el color en este caso */
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* animaciones */
+
+/* con keyframes nombro a la animacion y lo que hace, despues lo puedo meter en otros lados poniendo animation: name duration timing-function delay iteration-count direction fill-mode; dando el nombre que le di en el keyframe*/
+
+@keyframes mi-animacion {
+    0% {
+        background-color: aqua;
+    }
+    50% {background-color: red;}
+    100% {
+        background-color: green;
+    }
+}
+
+.box-animado {
+    background-color: orange;
+    padding: 25px;
+    animation-name: mi-animacion;
+    /* cuanto dura la animacion */
+    animation-duration: 2s;
+    /* cuanto tarda en hacerla devuelta */
+    animation-delay: 0s;
+    /* para donde va la animacion */
+    animation-timing-function: linear;
+    /* cuantas veces lo va a hacer */
+    animation-iteration-count: infinite;
+    /* tambien se puede usar la etiqueta de abajo que tiene todo lo de animation en una sola linea, y solo tenes que reemplazar cada uno */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}

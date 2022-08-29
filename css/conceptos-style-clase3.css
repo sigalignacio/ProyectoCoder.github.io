@@ -1,0 +1,55 @@
+/* comentarios shift+alt+a */
+/* 
+selector {
+    propiedad: valor;
+}
+ lo de arriba muestra como se hace para ponerle css a las etiquetas del html */ 
+
+div{
+    background-color: wheat;
+}
+div h3{ 
+    color: blue;
+    background-color: black;
+    /* font size es el tamaño de las letras */
+    font-size: 30px;
+}
+div p{
+    color: green;
+
+}
+
+/* Atributo CLASS */
+/* siempre para llamar a un nombre de clase pongo un . antes de nombrarla */
+
+.destacado {
+    background-color: violet;
+
+}
+
+.texto{
+    color: yellow;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* Atributo ID, se los llama con el # en CSS  */
+/* aca estoy modificando la class texto dentro del ID servicios */
+#servicios .texto{
+     color: #333;
+     font-family: sans-serif;
+
+}
+
+#contacto h3{
+    color: rgb(255, 0, 0);
+}
+
+/* Como hacer un reset css a la pagina, es decir sacarle todos los margenes blancos a los costados, los espacios entre parrafos y etc */
+/* El * llama a todas las etiquetas de html */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    /* tambien hay que poner mas propiedades que vamos a ver mas adelante */
+} 

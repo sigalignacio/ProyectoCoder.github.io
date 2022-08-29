@@ -1,0 +1,55 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+
+}
+
+.translate {
+background-color: cyan;
+/* en translate el 1er valor es siempre para el eje X y el segundo para el eje Y , con una coma de por  medio entre los dos*/
+transform: translate(100px, 25px  );
+
+}
+
+.rotate {
+    background-color: magenta;
+    /* rotateX para rotar solo eje x, lo mismo para rotateY o sino agregar dos valores a rotate, X e Y*/
+    transform: rotate(0deg);
+    font-size: 60px;
+    margin: 0 auto; /* para centrarlo */
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+    /* para cambiar el cursor del mouse por la manito para seleccionar se usa cursor y valor pointer, asi cuando pasa x arriba aparece la manito, despues hay varios mas como progress que es la ruedita de que esta cargando */
+    cursor: pointer;
+}
+
+.rotate:hover p {
+    display: none;
+    /* cuando paso x arriba, el p se oculta  */
+}
+.scale {
+    background-color: green;
+    transform: scale(2, 1); /* es para agrandar, X: primer valor Y: segundo valor con valores negativos se espeja*/
+    box-shadow: 10px 5px 20px 10px black; /* le hace una sombra a la box, como siempre los valores top right bottom left y el color de la sombra*/
+    
+}
+
+.skew {
+    background-color: black;
+    color: white;
+    margin-bottom: 500px;
+    transform: skew(10deg, 20deg);
+    margin: auto;
+}

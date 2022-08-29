@@ -1,0 +1,38 @@
+.grid-container {
+    /* activamos grid  */
+    display: grid;
+    /* grid-template-columns hace que por cada valor que le des, es una columna,
+    EJ: 100px 100px 100px serian 3 columnas de 100px de ANCHO cada una */
+    grid-template-columns:1fr 1fr 1fr;
+
+    /* grid.template-rows es lo mismo pero con filas, pero con el ALTO de las filas en vez del ancho */
+    /* si se pone AUTO en algun valor este va a ocupar todo el espacio restante de la pagina */
+    grid-template-rows: 100px 100px;
+    gap: 20px 20px;
+    /* gap es el espacio entre cada columna y fila, el primer valor es a las 
+    filas y el segundo a las columnas, si se pone solo 1 valor es lo mismo para los dos */
+    
+    /* la unidad fr es una unidad creada para el grid, si por ejemplo hay 3 columnas y pongo 1fr en cada una, cada columna va a ocupar 1/3 de ancho */
+    /* grid-template-rows: repeat(12, 1fr) otra forma para crear muchas filas o columnas es repeat, poniendo cuantas queres crear en el primer valor y cuanto ancho o alto dependiendo de si sean rows o columnas le queres dar en el segundo valor*/
+}
+
+.grid-container .grid-item {
+    background-color: lightblue;
+    padding: 10px
+
+}
+
+.grid-container .grid-item.uno {
+    background-color:orange;
+    /* grid column es para indicar cuantas columnas queres que ocupe 1 item, en este caso el 1, y se marca desde la calle anterior(el espacio entre columnas) hasta el posterior del cual queremos que llegue, EJ: si queremos que el item 1 vaya hasta la 2da columna ponemos grid-column:1/3 */
+    grid-column:1/3;
+    /* lo mismo funciona con el grid-row, nomas que es a lo alto */
+}
+
+.grid-container .grid-item.dos {
+    background-color: violet;
+    color: white;
+    
+
+
+}

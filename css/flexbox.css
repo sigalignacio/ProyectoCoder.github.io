@@ -1,0 +1,53 @@
+/* flexbox */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.flex-container {
+    background-color: wheat;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    /* display flex hace que cada caja pase a estar una al lado de otra */
+    display: flex;
+    /* gap es para marcar los espacios entre cada item del flex */
+    gap: 20px;
+    /* flex-direction es para que los items queden en row, osea en fila que es como viene predeterminado o column */
+    /* tambien estan row-reverse que el primer item de la fila pasa a ser el ultimo, lo mismo con column-reverse */
+    flex-direction: row;
+    /* flex-wrap hace que los items, cuando sean muchos y se agreguen mas los proximos vayan a la fila de abajo, para que no se sigan achicando y tambien se pueden usar los valores de reverse en wrap y nowrap */
+    flex-wrap: wrap;
+    /* justify content es para alinear los items del container, flex-start es el predeterminado, despues los valores son como el align text pero tambien tiene la opcion de space-around que pone uno a la izq otro a la derecha y centra el otro */
+    justify-content:flex-start;
+    /* align items:center los centra verticalmente, y el stretch deja que cada item tenga el mismo height sin importar la extension del contenido */
+    align-items: center;
+    /* align-content es para alinear cuando hay mas de una fila o columna */
+    
+}
+
+.flex-container .flex-item {
+    width: 250px;
+    height: auto;
+    background-color: aquamarine;
+
+}
+
+.flex-container .flex-item img {
+    width: 100%;
+    height: auto;
+
+}
+
+.flex-container .flex-item.coco { /* .coco va sin espacio despues de flex item xq las clases estan en la misma etiqueta */
+    border: 5px solid;
+    /* order es como el z index, todos tienen el valor 0 y si le ponemos 1 a un item, va ultimo de la fila, entonces mientras sea el num mas alto de los items flex va ultimo */
+    order: 1;
+
+
+
+}

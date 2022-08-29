@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box-lineal {
+    width: 600px;
+    height: 300px;
+    /* linear gradient es degrade , y se aplica del primer color arriba hasta el ultimo abajo */
+    /* si uso to left o to right antes de los colores dentro del parentesis, los colores van hacia el left o right */
+    background: linear-gradient(red, yellow, blue);
+    border: 3px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-radial {
+    width: 500px;
+    height: 500px;
+    /* radial gradient es desfrade pero es de afuera para adentro, poniendo el primer color adentro y el ultimo mas afuera, se puede agregar el porcentaje al lado de cada color */
+    border-radius: 50px;
+    background: radial-gradient(orange 35%, red);
+    
+
+}

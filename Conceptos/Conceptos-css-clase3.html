@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <!-- El CSS de una pagina se hace en otro file de VSCode llamandolo .css y se linkean en el head con la etiqueta link, como aca abajo -->
+    <link rel="stylesheet" href="./css/conceptos style.css">
+
+
+    <style>
+        /* CSS interno, es decir con la etiqueta style y sin usar otro archivo de css linkeado */
+        section{
+            background-color: blue;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="productos">
+        <!-- CSS interno desde atributo style (esto se llama inline) -->
+        <h2 style="color: white;">Trabajamos con CSS</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias at, similique maiores corrupti nihil et ac
+            cusantium reiciendis tenetur optio officia perspiciatis, ipsum culpa deserunt.</p>
+            
+
+        </div>
+        
+    </section>
+     
+    <hr><br>
+
+    <div  id="servicios" class="destacado">
+        <h3>CSS desde doc externo</h3>
+        <p class="texto">Lorem aipsum dolor sit amet consectetur adipisicing elit. Magnam vero amet cum, pariatur animi ipsa!</p>
+    </div>
+
+    <!-- El ID es como un nombre que se le pone a la seccion, parecido al class, y se lo llama con un # -->
+
+    <hr><br>
+
+    <section id="contacto">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure!</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quos impedit dignissimos, nostrum non maiores?</p>
+    </section>
+
+    
+
+</body>
+</html>

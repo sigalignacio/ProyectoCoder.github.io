@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+</head>
+<body>
+    <h1>Titulo de Pagina</h1>
+    <img src="./assets/images/auto.jpg" alt="">
+    <br>
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem, ipsum dolor.</h4>
+    <h5>Lorem, ipsum.</h5>
+    <h6>Lorem.</h6>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Deserunt ipsam fugit ut possimus dicta soluta commodi minima cumque, nisi,
+        nulla explicabo <em>capa</em> capa dolores fuga repellendus tempore cum qui magni.</p>
+    <div>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <img src="./assets/images/auto.jpg " alt="">
+    </div>
+    <h3>Saludos en Español</h3>
+    <ul>
+        <li>hola</li>
+        <li>chau</li>
+    </ul>
+    <h3>Numeros en Español</h3>
+    <ol>
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+    </ol>
+
+    <h3>sublistas</h3>
+    <ul>
+        
+        <p>Procesadores</p>
+        <ul>
+            <p>intel</p>
+            <li>i5</li>
+            <li>i7</li>
+            <li>i9</li>
+
+            <p>AMD</p>
+            <li>Ryzen 5</li>
+            <li>ryzen 7</li>
+
+        </ul>
+    </ul>
+
+    <table>
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </thead>
+        <tr>
+            <td>Julian</td>
+            <td>Aliendro</td>
+            <td>36</td>
+        </tr>
+
+        <tr>
+            <td>Ramiro</td>
+            <td>Escobar</td>
+            <td>33</td>
+        </tr>
+    </table>
+    <br>
+
+    <form action="">
+    <!--"id es para identificar cuando se envia el formulario que texto es el que nos envio"-->
+    <!--"de type son los tipos de textos,text es un texto normal, password oculta las letras que se escriben y email te lo autorellena con los mails que tenes registrados"-->
+    <!--el "placeholder" es la palabra que se pone en gris en el recuadro del input, mostrando lo que tenemos que poner en cada cuadro, ejemplo contraseña-->
+    <!--El fieldset se pone al principio del form y al final antes del cierre del form para que se haga una caja alrededor del formulario-->
+    <!--El Legend escribe un titulo arriba del formulario para que se sepa de que trata el formulario-->
+        <fieldset>
+            <legend>Formulario</legend>
+
+            <input type="email" name="email" id="email" placeholder="Correo electronico">
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <br>
+            <br>
+            <textarea name="Biografia" id="" cols="30" rows="10"placeholder="Biografia"></textarea>
+            <input type="submit" value="Enviar formulario"> 
+            <input type="reset" value="Limpiar formulario">
+        </fieldset>
+    </form>
+
+    <!--Elegir una de las opciones-->
+    <!--Se pone el mismo name en las tres opciones para que solo se pueda elegir una opcion de las 3, y no mas de una-->
+    <p>Sexo</p>
+    <label>
+        Hombre
+        <input type="radio" name="sexo" id="Hombre">
+    </label>
+    <label>Mujer
+        <input type="radio" name="sexo" id="Mujer">
+    </label>
+    <label>Otro
+        <input type="radio" name="sexo" id="otro">
+
+    </label>
+    <p>Acepta los Terminos y Condiciones</p>
+    <input type="checkbox" name="Terminos" id="Terminos">
+
+  
+    <!-- para hacer una lista con opciones para elegir se usa Select-->
+   <strong><p>Consola favorita</p></strong>
+    <select name="consola" id="consola">
+        <option value="Play Station">Play Station</option>
+        <option value="Xbox"> Xbox</option>
+        <option value="Nintendo Switch">Nintendo Switch</option>
+
+
+    </select>
+    <br>
+    <br>
+    <label for="comida"><strong>¿Cual es tu comida favorita?</strong></label>
+    <input type="text" name="comida" id="comida">
+
+    <!--label sirve para nombrar al lado de un input o de un form lo que debes escribir en el, es como un placeholder pero escrito al lado del texto a rellenar-->
+    <!--SACAR EL FOR DEL LABEL PARA QUE CUANDO APRETE EN EL NOMBRE SE COMPLETE LA OPCION-->
+    <!--Otra forma de hacer que al apretar el nombre se complete la opcion esa es poner el ID o el NAME del input adentro de el FOR de su LABEL-->
+
+    <form action="">
+        <fieldset>
+            <legend>Info Personal</legend>
+            <label>
+                Hombre
+                <input type="radio" name="sexo" id="Hombre">
+            </label>
+            <label>
+                Mujer
+                <input type="radio" name="sexo" id="Mujer">
+            </label>
+            <label>
+                Otro Genero
+                <input type="radio" name="sexo" id="Otro">
+            </label>
+            <br>
+            <br>
+            <label><strong>Nombre:</strong>
+                <input type="text" id="nombre">
+            </label>
+            <br>
+            <br>
+            <label ><strong>Apellido:</strong>
+                <input type="text" id="apellido">
+
+            </label>
+            <!--ASI TAMBIEN SE PUEDE USAR EL LABEL PARA QUE CUANDO SE APRETE EL NOMBRE ENTRE DIRECTAMENTE A LAS OPCIONES-->
+            <br>
+            <br>
+            <label for="talle">Talle:</label>
+            <select name="talle id="talle">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+<!--Href es un hipervinculo para un texto o imagen. SI LO USAS CON TARGET _BLANK, TE CREA OTRA PESTAÑA DEL HIPERVINCULO-->
+<!--Y si usas target _self, es para una pagina adentro de esa pagina, como por ejemplo productos o contacto-->
+<!--Usar #top para que al clickear suba al principio de la pagina-->
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="./pages/contacto.html" target="_self">Contacto</a>
+    <a href="#top">Subir</a>
+    <a href="https://www.mercadolibre.com.ar/" target="_blank"> 
+        <img src="https://www.telefonoargentina.com/wp-content/uploads/2019/07/mercadolibre-argentina.png"
+        alt=" mercadolibre imagen" 
+        width="300">
+    </a>
+
+    <a href="https://www.amazon.com/-/es/" target="_blank">
+        <img 
+            src="./assets/images/amazon.jpg" 
+            alt="amazon imagen"
+            width="300"      
+        >
+    </a>
+
+
+    
+</body>
+</html>

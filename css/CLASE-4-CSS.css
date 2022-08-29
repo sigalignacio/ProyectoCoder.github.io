@@ -1,0 +1,148 @@
+div h1{
+    color: rgb(64, 149, 218);
+    background-color: aqua;
+
+}
+
+ul li {
+    /* El list-style, modifica el puntito de las viñetas de las listas, en este caso con el valor None se las saca */
+    list-style: none;
+
+}
+
+.parrafo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    /* Line-height es la altura entre las lineas de los parrafos */
+    line-height: 1,5;
+    font-style: italic;
+    /* letter-spacing es el espacio entre letras */
+    letter-spacing: 1px;
+    /* text-align es para alinear en texto para la izquierda o derecha, o al medio*/
+    text-align: center;
+    /* El font-weight es para determinar que tan en negrita queres la letra, mientras mas valor mas negrita o sino bold que es negrita */
+    font-weight: 600;
+    text-decoration: underline;
+    /* background-image es para ponerle una imagen de fondo a la box del texto */
+    background-image: url();
+}
+
+.auto{
+    height: 400px;
+    width: 100%;
+    background-image: url(../assets/images/auto.jpg);
+    background-position: center;
+    /* background.size es para indicarle a la imagen si tiene que cubrir todo el texto o no */
+    background-size: 75%;
+    background-color: red;
+    /* background-repeat para que no se repita la imagen varias veces cuando el size es menor a 100% o no es cover */
+    background-repeat:no-repeat   
+}
+
+.boxModel{
+    width: 400px;
+    height: 200px;
+    background-color: wheat;
+    border: solid 10px brown;
+    /* border-top-color es para determinar el color de cada borde, en este caso del top */
+    border-top-color: blueviolet;
+    /* Padding es la distancia del texto al borde, y padding-top es la distancia del texto con el borde de arriba, y asi con todos los lados     */
+    padding-top: 20px;
+    padding-right: 30px;    
+    padding-bottom: 20px;
+    padding-left: 30px;
+    /* Tambien se puede hacer asi, en sentido de las agujas del reloj(top, right, bottom, left) y asi tambien es el orden en otras etiquetas  */
+    padding: 20px 30px 20px 30px ;
+    /* si solo dejo dos valores, toma como si el primero es arriba y abajo, y el segundo izquierda y derecha */
+    /* margin son las distancias de la pagina en relacion al box model, mientras mas es mas alejada esta de los margenes de la pagina */
+    /* puedo moverlo en la pagina con inspeccionar y ver como queda y despues ponerlo aca */
+    /* auto lo pone centrado */
+    margin: auto ;
+    /* overflow es cuando el texto se sale del box model , y a pesar de que podemos poner la height en auto para que se acomode al texto, podemos usar overflow tambien, que todo lo que sobresalga del texto lo tapa con hidden,o auto para que se use el mouse para ver el texto */
+    overflow:auto ;
+}   
+
+.boxModel p{
+    text-align: center;
+    font-size: 24px;
+
+}
+
+* {
+    /* si nos fijamos en inspeccionar, el box tiene mas tamaño que lo que puse en height y width, ya que toma el border y el padding de cada lado, y para que tenga el tamaño total que puse contando el border y el padding se pone esto.*/
+    /* es para que no haya valores predeterminados de estos elementos, y los valores que indico sean reales */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxModel span{
+    background-color: greenyellow;
+    color: red;
+
+}
+
+/* display */
+
+p.displayBloque {
+    background-color: aqua;
+    /* margin-botton separa el elemento debajo por la distancia que se especifique */
+    margin-bottom: 25px;
+    padding: 10px;
+    /* display inline convierte a la etiqueta en un elemento de linea, y asi se encuentren en el mismo renglon, mientras que el display block lo convierte en una etiqueta de bloque */  
+    display: inline;
+}
+
+
+a.displayLinea {
+    padding: 10px;
+    background-color: green;
+    display: block;
+}
+
+/* position */
+
+.pos {
+    width: 100px;
+    height: 100px;
+    border: 1px dotted;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.pos.uno{
+    background-color: orange;
+    /* position relative es para mover un elemento, pero toma de punto de origen donde esta puesto, con bottom, left, right y top */
+    position: relative;
+    left: 20px;
+    bottom: 0px;
+}
+.pos.dos{
+    background-color: grey;
+    /* position absolute no toma el elemento de punto de origen donde esta puesto, sino que no tiene punto de origen y sirve para moverlo libremente */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.pos.fixed{
+    /* position fixed hace que cuando scrolles en la pagina, este se queda pegado en la posicion que esta en la pantalla */
+    position: fixed;
+    background-color: black;
+    left: 0px;
+    top: 0px;
+    /* z-index hace que cuando scrolles y pases por otro position, este position no se vaya abajo del otro, ya que todos tienen el valor predeterminado 0, y para que el fixed pase por arriba de cualquiera, hay que ponerle valor 1 */
+    z-index: 1;
+
+}
+
+.pos-sticky{
+    background-color: red;
+    padding: 25px;
+    /* position sticky lo que hace es cuando el elemento llega a la posicion 0 de top en este caso, este se pega a la pantalla como el fixed */
+    position: sticky;
+    top: 0px;
+
+}
+

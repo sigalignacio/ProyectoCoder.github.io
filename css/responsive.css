@@ -1,0 +1,75 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+
+.boxResponsive {
+    background-color: tomato;
+    padding: 10px;
+
+}
+
+/* responsive, entre parentesis aclaramos que hasta tantos pixeles en este caso xq usamos max-width, es decir hasta cuantos px de width usa lo que se aclara */
+
+@media  (max-width:768px) {
+    .boxResponsive {
+        background-color: aqua;
+    }
+}
+
+
+
+
+@media (min-width:769px) and (max-width:989px) {
+    .boxResponsive {
+        background-color: black;
+        color: orange;
+    }
+
+}
+
+
+@media (min-width:990px) {
+    .boxResponsive {
+        background-color: blue;
+        color: white;
+        padding: 100px 50px;
+
+    }
+}
+
+
+@media (max-width:769px) {
+    .boxResponsive p {
+    display: none;
+
+    }
+}
+
+#imgResponsive {
+    background-color: greenyellow;
+    padding: 10px;
+    
+
+}
+
+#imgResponsive .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+@media (min-width:768px) {
+    #imgResponsive {
+        display: flex;
+        gap: 40px;
+        background-color: black;
+        color: white;
+    }
+
+}

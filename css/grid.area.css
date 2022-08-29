@@ -1,0 +1,40 @@
+#grid-area {
+    display: grid;
+    grid-template-areas: 
+    /* con un . queda una celda vacia */
+    "menu logo logo"
+    "menu info banner"
+    "menu info banner"
+    "footer footer footer";
+    gap: 10px;
+    height: 100vh;
+    grid-template-rows: 100px auto auto 80px;
+    grid-template-columns:200px auto 150px;
+}
+
+header {
+    background: aqua;
+    grid-area: logo;
+}
+
+nav {
+    background: pink;
+    grid-area: menu;
+}
+
+section {
+    background: green;
+    grid-area: info;
+    
+}
+
+aside {
+    background: tomato;
+    grid-area: banner;
+
+}
+
+footer {
+    background: yellow;
+    grid-area: footer;
+}
