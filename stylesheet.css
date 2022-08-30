@@ -22,7 +22,7 @@ body {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 30px 30px 550px auto 100px;
+    grid-template-rows: 50px 30px 30px 550px auto 30px 350px;
     
 }
 
@@ -31,6 +31,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position:sticky;
+    top: 0;
+    
     
     
     
@@ -44,9 +47,12 @@ body {
 
 .grid-container .subtitulo {
     text-align: center ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .grid-container .subtitulo2 {
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -64,39 +70,43 @@ body {
 .grid-container .index-producto {
     margin-top: 70px;
     display: flex;
+    justify-content: center;
+    gap: 150px;
+    transition: transform 1s;
 
+}
 
+.grid-container .productoIndex:hover {
+transition: transform 1s;
+transform: scale(1.2);
+z-index: 1;
+
+}
+
+.grid-container .productoIndex1:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .grid-container .index-producto img {
     width: 400px;
-    border: black solid 2px;
+    border: brown solid 2px;
     
-
-
-}
-
-.grid-containerr {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 30px auto 100px;
     
 }
 
-.grid-containerr .nav {
-    background-color: rgb(187, 145, 145);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-
-.navegador {
+.grid-container .navegador {
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     text-decoration: none;
+
+}
+
+.grid-container .nombreProducto {
+    display: flex;
+
 
 }
 
@@ -105,23 +115,14 @@ body {
     .titulo2 {
         width: 768px;
     }
-    .nav2 {
-        width: 768px;
-    }
 
-    .zapaindex2 {
+    .zapaindex {
         display: flex;
     }
 
     
 }
 
-.nav2 {
-    background-color: rgb(187, 145, 145);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .titulo2 {
     text-align: center;
@@ -139,3 +140,207 @@ body {
 }
 
 
+.grid-container .footer1 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    font-family: 'Saira', sans-serif;
+    margin-top: 20px;
+    color: white;
+        
+}
+
+.grid-container .footer1 span {
+    margin-bottom: 20px;
+
+}
+
+
+
+.grid-container .footer1 img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
+}
+
+.subir {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50%;
+    top: 50%;
+    right: 0%;
+}
+
+ .grid-container .parrafosProducto {
+    display: flex;
+    justify-content: center;
+    gap: 380px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.grid-container .parrafosProducto .precioProducto {
+    margin-left: 25px;
+}
+
+.grid-container .parrafosProducto .precioProducto2 {
+    margin-left: 96px;
+
+}
+
+.grid-container .parrafosProducto .nombreProducto2 {
+    position: relative;
+    left: 35px;
+}
+
+
+
+
+
+/* productos */
+
+
+
+
+.grid-containerProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 30px auto 100px;
+    
+}
+
+.grid-containerProductos .nav {
+    background-color: rgb(187, 145, 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+
+}
+
+.grid-containerProductos .nav a:hover {
+    text-decoration: underline;
+    
+}
+
+.grid-containerProductos .navegador {
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+
+.titulo2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid;
+    padding: 5px;
+    background-image: url(./assets/images/ezgif-4-81e0b2a336.jpg);
+    background-size: 8%;
+    margin-bottom: 3px;
+}
+
+
+.grid-containerProductos .subtitulo {
+    text-align: center ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.grid-containerProductos .index-producto img {
+    width: 400px;
+    border: brown solid 2px;
+}
+
+.grid-containerProductos .index-producto {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    transition: transform 1s;
+
+}
+
+.grid-containerProductos .productoIndex:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+    z-index: 1;
+    
+    }
+    
+.grid-containerProductos .productoIndex1:hover {
+        transition: transform 1s;
+        transform: scale(1.2);
+        z-index: 1;
+}
+
+.grid-containerProductos .parrafosProducto {
+    display: flex;
+    justify-content: center;
+    gap: 380px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.grid-containerProductos .parrafosProducto .precioProducto {
+    margin-left: 25px;
+}
+
+.grid-containerProductos .parrafosProducto .precioProducto2 {
+    margin-left: 96px;
+
+}
+
+.grid-containerProductos .parrafosProducto .nombreProducto2 {
+    position: relative;
+    left: 35px;
+}
+
+.grid-containerProductos .footer1 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    font-family: 'Saira', sans-serif;
+    margin-top: 20px;
+    color: white;
+        
+}
+
+.grid-containerProductos .footer1 span {
+    margin-bottom: 20px;
+
+}
+
+
+
+.grid-containerProductos .footer1 img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
+}
