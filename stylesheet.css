@@ -1,10 +1,13 @@
+
+
 * {
     margin: 0%;
     padding: 0%;
 }
 
 body {
-    background-color: wheat
+    background-color:#FFBF00
+
 
 }
 
@@ -16,14 +19,13 @@ body {
     padding: 5px;
     background-image: url(./assets/images/ezgif-4-81e0b2a336.jpg);
     background-size: 8%;
-    margin-bottom: 3px;
+    margin-top:0.1mm;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 30px 30px 550px auto 30px 350px;
-    background-color: wheat;
+    grid-template-rows: 55px 35px 35px 600px auto 30px 350px;
     
 }
 
@@ -49,13 +51,16 @@ body {
 
 .grid-container .subtitulo {
     text-align: center ;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
     
 
 }
 .grid-container .subtitulo2 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    margin-top: 10px;
 
 }
 
@@ -151,7 +156,6 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 
 .grid-container .footer1 span {
     margin-bottom: 20px;
-
 }
 
 
@@ -166,6 +170,30 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
     border-radius: 50%;
     
 }
+/* 
+.grid-container .footer1 .listas {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    left: 250px;
+    text-decoration:
+
+    
+    
+}
+
+
+
+.grid-container .footer1 a {
+    color: white;
+    
+}
+
+.grid-container .footer1 .lista1 li a {
+    padding: 10px;
+
+}
+ */
 
 .subir {
     width: 50px;
@@ -207,9 +235,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
     background-position: center;
     margin-top: 10px;
     
-
 }
-
 
 /* productos */
 
@@ -219,7 +245,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 .grid-containerProductos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 30px auto 100px;
+    grid-template-rows: 55px 30px auto 100px;
     
 }
 
@@ -253,6 +279,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 .grid-containerProductos .subtitulo {
     text-align: center ;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8px;
 
 }
 
@@ -323,7 +350,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
     justify-content: center;
     background-color: rgb(80, 80, 80);
     font-family: 'Saira', sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
         
 }
@@ -411,7 +438,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 
 .footer1Nosotros {
     width: 100%;
-    height: 350px;
+    height: 250px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -451,11 +478,144 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 }
 
 .parrafoNosotros {
+display: flex;
+
+}
+
+.parrafoNosotros img {
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    bottom: 100px;
+    left: 120px;
+    border-style: solid 1cm;
+
+}
+
+.parrafoNosotros p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     width: 700px;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-left: 100px;
     font-size: 20px;
 
 }
+
+
+
+/* Sale */
+.subtitulo {
+    text-align: center ;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+
+}
+
+.index-producto img {
+    width: 400px;
+    border: brown solid 2px;
+}
+.index-producto {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    transition: transform 1s;
+
+}
+.productoIndex:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    
+}
+.productoIndex1:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.parrafosProducto {
+    display: flex;
+    justify-content: center;
+    gap: 380px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+ .parrafosProducto .precioProducto {
+    position: relative;
+    left: 25px;
+    bottom: 20px;
+    text-decoration:line-through 3px;
+}
+
+.parrafosProducto .precioProducto2 {
+    position: relative;
+    left: 96px;
+    bottom: 20px;
+    text-decoration:line-through 3px;
+
+}
+ .parrafosProducto .nombreProducto2 {
+    position: relative;
+    left: 35px;
+}
+
+.PrecioSale1 {
+    position: relative;
+    left: 23px;
+    bottom: 45px;
+    font-size: 20px;
+}
+
+.precioSale2 {
+    position: relative;
+    left: 88px;
+    bottom: 45px;
+    font-size: 20px;
+
+}
+
+/* FAQ */   
+
+.parrafoFAQ  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    width: 400px;
+    padding-top: 30px;
+    padding-left: 100px;
+    font-size: 20px;
+
+}
+
+.subtituloFAQ {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    justify-items: center;
+    align-items: center;
+    padding-left: 15px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+.FAQ {
+    display: flex;
+    
+
+}
+
+.FAQ1 {
+    margin-left: 300px;
+}
+
