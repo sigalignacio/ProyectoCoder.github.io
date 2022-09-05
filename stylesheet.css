@@ -324,13 +324,13 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
     font-size: 16px;
 }
 
-.grid-containerProductos .parrafosProducto .precioProducto {
+.grid-containerProductos .parrafosProducto .precioProductoP {
     position: relative;
-    left: 25px;
+    left: 28px;
     bottom: 20px;
 }
 
-.grid-containerProductos .parrafosProducto .precioProducto2 {
+.grid-containerProductos .parrafosProducto .precioProductoP1 {
     position: relative;
     left: 96px;
     bottom: 20px;
