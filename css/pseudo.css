@@ -1,0 +1,35 @@
+.link a {
+    color: green;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.link a:hover {
+    background-color: black;
+    color: tomato;
+}
+
+.link a:active {
+    background-color: blue;
+    color: white;
+
+}
+
+div.link {
+    background-color: violet;
+    height: 100px;
+    display: inline-block;
+
+}
+
+div.link:hover  {
+    background-color: red;
+    cursor:grabbing;
+}
+
+/* el + es solo para etiquetas hermanas, es decir que estan al mismo nivel y no son ni hijos ni padres, como input y p que son hermanos */
+
+div input:checked + p {
+    color: red;
+
+}

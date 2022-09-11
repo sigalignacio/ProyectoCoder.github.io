@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-media {
+    width: 100%;
+    background-color: greenyellow;
+    padding: 25px;
+
+}
+
+.box-media h1 {
+    font-size: 3rem;
+
+}
+
+.box-media h2 {
+    font-size: 3rem;
+
+}
+
+.box-media h3 {
+    font-size: 68px;
+    background-color: orange;
+
+}
+
+.box-media p {
+    font-size: 2rem;
+
+}
+
+@media (max-width:575px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    .box-media {
+        background-color: tomato;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .box-media {
+        background-color: blue;
+        color:white
+
+    }
+}
