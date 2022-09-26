@@ -121,18 +121,6 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 
 }
 
-    
-@media screen and (max-width:768px) {
-    .titulo2 {
-        width: 768px;
-    }
-
-    .zapaindex {
-        display: flex;
-    }
-
-    
-}
 
 
 
@@ -619,3 +607,17 @@ display: flex;
     margin-left: 300px;
 }
 
+@media (max-width:769px) {
+    header {
+        display: none;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+}
+
+.zindex {
+    z-index: 1;
+}

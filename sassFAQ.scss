@@ -30,7 +30,7 @@
     }
     .parrafoFAQ-extend {
         @extend .parrafoFAQ;
-        color: blue;
+        color: black;
     }
 
     .FAQ1 {
@@ -92,3 +92,14 @@
 body {
     background-color:#FFBF00;
 } 
+
+@media (max-width:769px) {
+    header {
+        display: none;
+    }
+  
+    .titulo {
+        display: none;
+    }
+  
+}

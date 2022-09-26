@@ -25,7 +25,7 @@
   margin-top: 30px;
 }
 .FAQ .parrafoFAQ-extend {
-  color: blue;
+  color: black;
 }
 .FAQ .FAQ1 {
   margin-left: 300px;
@@ -80,4 +80,13 @@
 
 body {
   background-color: #FFBF00;
+}
+
+@media (max-width: 769px) {
+  header {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
 }/*# sourceMappingURL=sassFAQ.css.map */
